@@ -41,7 +41,7 @@ def org_meta_html(logo_path: str, label: str) -> str:
     logo_html = ""
     if logo_path and os.path.exists(logo_path):
         logo_html = f'<div class="org-logo-wrap"><img class="org-logo" src="{file_to_data_uri(logo_path)}" /></div>'
-    return f'<div class="org-meta-row">{logo_html}<div class="org-meta">{label}</div></div>'
+    return f'<div class="org-meta-row"><div class="org-meta">{label}</div>{logo_html}</div>'
 
 
 # ---------- Brand + thin vertical nav rail ----------

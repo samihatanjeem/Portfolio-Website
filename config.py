@@ -25,7 +25,7 @@ PROFILE = {
     "phone": "(737) 288-4846",
     "resume_path": "assets/resume.pdf",
     "profile_image": "assets/profile.jpg",
-    "profile_cutout_image": "assets/profile-cutout.png",
+    "profile_cutout_image": "assets/samiha.png",
 }
 
 SOCIAL_LINKS = {
@@ -216,7 +216,7 @@ EDUCATION = [
     {
         "degree": "Master of Science in Business Analytics (MSBA)",
         "institution": "East Texas A&M University",
-        "logo": "assets/etamu.jpg",
+        "logo": "assets/etamu.png",
         "period": "Aug 2026",
         "email": "stanjeem@lemail.tamuc.edu",
         "description": "GPA: 3.90",
@@ -234,7 +234,7 @@ EDUCATION = [
     {
         "degree": "Bachelor of Business Administration (BBA) in Marketing",
         "institution": "North South University",
-        "logo": "assets/nsu.jpg",
+        "logo": "assets/nsu.png",
         "period": "Dec 2022",
         "email": "samiha.tanjeem@northsouth.edu",
         "description": "",

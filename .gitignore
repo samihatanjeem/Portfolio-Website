@@ -4,3 +4,6 @@ __pycache__/
 venv/
 .DS_Store
 assets/profile-source.jpg
+
+# Never commit credentials sitting in assets/ - this repo backs a public app.
+assets/API key notes.txt

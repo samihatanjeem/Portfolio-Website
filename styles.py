@@ -224,25 +224,28 @@ CUSTOM_CSS = f"""
     .org-meta-row {{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 0.65rem;
         margin-bottom: 0.6rem;
         flex-wrap: wrap;
     }}
     .org-logo-wrap {{
-        width: 56px;
-        height: 34px;
+        width: 72px;
+        height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
     }}
+    /* The logo moved to the right side of .org-meta-row, so the description/
+       email lines below it no longer need to dodge a left-side logo. */
     .edu-indent {{
-        margin-left: calc(56px + 0.65rem);
+        margin-left: 0;
     }}
     .org-logo {{
-        height: 34px !important;
+        height: 44px !important;
         width: auto !important;
-        max-width: 56px !important;
+        max-width: 72px !important;
         object-fit: contain !important;
         border-radius: 6px;
         flex-shrink: 0;
