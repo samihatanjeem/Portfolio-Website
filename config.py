@@ -48,7 +48,7 @@ PROJECTS = [
             "automatic flags when a company falls outside the regression's "
             "training range."
         ),
-        "image": "",
+        "image": "assets/projects/stock-analyst-agent.png",
         "bullets": [],
         "tags": [
             "Python", "LangGraph", "LangChain", "Google Gemini",

@@ -219,7 +219,13 @@ for p in PROJECTS:
         links_html += icon_pill(EXTERNAL_LINK, p["demo_url"], "Live Demo")
     if p.get("repo_url"):
         links_html += icon_pill(GITHUB, p["repo_url"], "Source Code")
-    image_html = f'<div class="card-image"><img src="{p["image"]}" /></div>' if p.get("image") else ""
+    image_html = ""
+    img = p.get("image")
+    if img:
+        if img.startswith(("http://", "https://")):
+            image_html = f'<div class="card-image"><img src="{img}" /></div>'
+        elif os.path.exists(img):
+            image_html = f'<div class="card-image"><img src="{file_to_data_uri(img)}" /></div>'
     bullets = p.get("bullets") or []
     bullets_html = "".join(f"<li>{b}</li>" for b in bullets)
     highlights_html = (
