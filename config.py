@@ -52,24 +52,18 @@ PROJECTS = [
         "bullets": [
             "Designed an LLM agent on the Gemini API that decides per question "
             "which of 5 tools to call (Yahoo Finance statements, Finnhub API "
-            "quotes and analyst trends, "
-            "DuckDuckGo news, a RAG search of my capstone paper, and my OLS "
-            "model), then combines the results into one grounded answer with a "
-            "live TradingView chart.",
+            "quotes and analyst trends, DuckDuckGo news, a RAG search of my "
+            "capstone paper, and my OLS model), with a three-model fallback "
+            "chain and 15-second timeouts for reliability.",
             "Built the RAG pipeline end to end: chunked my capstone paper "
             "(800-character chunks, 120 overlap), embedded it with Gemini API "
             "embeddings at 768 dimensions, and indexed it in MongoDB Atlas "
             "Vector Search so the LLM answers from retrieved passages.",
             "Turned my fitted OLS regression (279 firm-year observations, 182 "
             "U.S. public companies) into a live ROA prediction tool that flags "
-            "any estimate as an out-of-sample extrapolation when a company "
-            "falls outside the training range.",
-            "Engineered for reliability: a three-model Gemini fallback chain "
-            "with a 15-second timeout per model, and tools that drop out "
-            "gracefully when an API key is missing instead of inventing numbers.",
-            "Deployed publicly on Streamlit Community Cloud with streaming "
-            "answers, a live market snapshot with sparklines, and cached "
-            "market data.",
+            "out-of-sample extrapolation, and deployed the app publicly on "
+            "Streamlit Community Cloud with streaming answers and a live "
+            "TradingView chart.",
         ],
         "tags": [
             "LLM", "RAG", "Gemini API", "Finnhub API", "MongoDB Atlas",
