@@ -49,10 +49,31 @@ PROJECTS = [
             "training range."
         ),
         "image": "assets/projects/stock-analyst-agent.png",
-        "bullets": [],
+        "bullets": [
+            "Designed an agent that decides per question which of 5 tools to "
+            "call (Yahoo Finance statements, Finnhub quotes and analyst trends, "
+            "DuckDuckGo news, a RAG search of my capstone paper, and my OLS "
+            "model), then combines the results into one grounded answer with a "
+            "live TradingView chart.",
+            "Built the RAG pipeline end to end: chunked my capstone paper "
+            "(800-character chunks, 120 overlap), embedded it with Gemini "
+            "embeddings at 768 dimensions, and indexed it in MongoDB Atlas "
+            "Vector Search for retrieval.",
+            "Turned my fitted OLS regression (279 firm-year observations, 182 "
+            "U.S. public companies) into a live ROA prediction tool that flags "
+            "any estimate as an out-of-sample extrapolation when a company "
+            "falls outside the training range.",
+            "Engineered for reliability: a three-model Gemini fallback chain "
+            "with a 15-second timeout per model, and tools that drop out "
+            "gracefully when an API key is missing instead of inventing numbers.",
+            "Deployed publicly on Streamlit Community Cloud with streaming "
+            "answers, a live market snapshot with sparklines, and cached "
+            "market data.",
+        ],
         "tags": [
             "Python", "LangGraph", "LangChain", "Google Gemini",
-            "MongoDB Atlas Vector", "Streamlit", "yfinance", "Finnhub API",
+            "RAG", "Vector Search", "MongoDB Atlas", "OLS Regression",
+            "Tool Calling", "Streamlit", "yfinance", "Finnhub API",
         ],
         "demo_url": "https://stock-analyst-ai-agent.streamlit.app/",
         "repo_url": "https://github.com/samihatanjeem/Stock-Analyst-AI-Agent",
