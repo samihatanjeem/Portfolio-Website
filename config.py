@@ -50,15 +50,16 @@ PROJECTS = [
         ),
         "image": "assets/projects/stock-analyst-agent.png",
         "bullets": [
-            "Designed an agent that decides per question which of 5 tools to "
-            "call (Yahoo Finance statements, Finnhub quotes and analyst trends, "
+            "Designed an LLM agent on the Gemini API that decides per question "
+            "which of 5 tools to call (Yahoo Finance statements, Finnhub API "
+            "quotes and analyst trends, "
             "DuckDuckGo news, a RAG search of my capstone paper, and my OLS "
             "model), then combines the results into one grounded answer with a "
             "live TradingView chart.",
             "Built the RAG pipeline end to end: chunked my capstone paper "
-            "(800-character chunks, 120 overlap), embedded it with Gemini "
+            "(800-character chunks, 120 overlap), embedded it with Gemini API "
             "embeddings at 768 dimensions, and indexed it in MongoDB Atlas "
-            "Vector Search for retrieval.",
+            "Vector Search so the LLM answers from retrieved passages.",
             "Turned my fitted OLS regression (279 firm-year observations, 182 "
             "U.S. public companies) into a live ROA prediction tool that flags "
             "any estimate as an out-of-sample extrapolation when a company "
@@ -71,9 +72,9 @@ PROJECTS = [
             "market data.",
         ],
         "tags": [
-            "Python", "LangGraph", "LangChain", "Google Gemini",
-            "RAG", "Vector Search", "MongoDB Atlas", "OLS Regression",
-            "Tool Calling", "Streamlit", "yfinance", "Finnhub API",
+            "LLM", "RAG", "Gemini API", "Finnhub API", "MongoDB Atlas",
+            "Python", "LangGraph", "LangChain", "Vector Search",
+            "OLS Regression", "Tool Calling", "Streamlit", "yfinance",
         ],
         "demo_url": "https://stock-analyst-ai-agent.streamlit.app/",
         "repo_url": "https://github.com/samihatanjeem/Stock-Analyst-AI-Agent",
