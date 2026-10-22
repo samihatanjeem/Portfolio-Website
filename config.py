@@ -36,7 +36,7 @@ SOCIAL_LINKS = {
 
 PROJECTS = [
     {
-        "title": "Stock Analyst-AI Agent",
+        "title": "AI Stock Analyst Agent",
         "date": "Sep 2026",
         "description": (
             "Built and deployed a LangGraph agent powered by Gemini that "
