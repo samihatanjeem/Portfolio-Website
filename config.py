@@ -36,6 +36,28 @@ SOCIAL_LINKS = {
 
 PROJECTS = [
     {
+        "title": "Stock Analyst-AI Agent",
+        "date": "Sep 2026",
+        "description": (
+            "Built and deployed a LangGraph agent powered by Gemini that "
+            "autonomously selects among 5 tools per question (live financial "
+            "statements, market quotes, news search, RAG over my capstone paper "
+            "in MongoDB Atlas, and my fitted OLS model predicting next-year ROA "
+            "from 7 financial ratios) to generate grounded stock analyses in a "
+            "live Streamlit app, with multi-model fallback for reliability and "
+            "automatic flags when a company falls outside the regression's "
+            "training range."
+        ),
+        "image": "",
+        "bullets": [],
+        "tags": [
+            "Python", "LangGraph", "LangChain", "Google Gemini",
+            "MongoDB Atlas Vector", "Streamlit", "yfinance", "Finnhub API",
+        ],
+        "demo_url": "https://stock-analyst-ai-agent.streamlit.app/",
+        "repo_url": "https://github.com/samihatanjeem/Stock-Analyst-AI-Agent",
+    },
+    {
         "title": "US Stocks Predictive Analysis",
         "date": "Feb 2026",
         "description": (
