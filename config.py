@@ -172,40 +172,42 @@ CERTIFICATIONS = [
 
 EXPERIENCE = [
     {
-        "role": "UX Research Analyst (Internship)",
+        "role": "Data Research Analyst Intern",
         "organization": "PRYPCO",
         "logo": "assets/prypco.png",
         "period": "May 2025 – Jul 2025",
-        "impact": "13 customer journey maps directly informed product recommendations for the Prypco One app.",
+        "impact": "13 prioritized feature recommendations helped the product team decide what to build first for PRYPCO's AI-enabled agent app.",
         "bullets": [
-            "Analyzed 13 real-world interviews across buyer, seller, and client "
-            "segments in the Dubai real estate market, engineering 13 customer "
-            "journey maps to identify pain points, behavioral patterns, and "
-            "feature gaps that directly informed product recommendations for "
-            "the Prypco One app.",
-            "Cleaned, structured, and analyzed ~150 qualitative and quantitative "
+            "Conducted 13 customer interviews with buyers, sellers, and investors "
+            "across all five PRYPCO products (Mint, Blocks, Mortgage, One, Golden "
+            "Visa), building 13 journey maps to surface pain points, behavioral "
+            "patterns, and feature gaps that informed product recommendations for "
+            "PRYPCO's AI-enabled agent app.",
+            "Cleaned, structured, and analyzed 150 qualitative and quantitative "
             "data points using Pandas, Excel, and Scikit-learn; built Matplotlib "
-            "and Tableau visualizations to translate EDA findings into "
-            "actionable design recommendations for the Prypco One app.",
+            "and Tableau visualizations to translate EDA findings into actionable "
+            "design recommendations.",
+            "Synthesized findings across five product lines into 13 prioritized "
+            "feature recommendations, ranking pain points by frequency, severity, "
+            "and customer segment to help the product team decide what to build "
+            "first.",
         ],
     },
     {
-        "role": "UX Branding (Internship)",
+        "role": "Marketing Data Analyst Intern",
         "organization": "Praava Health",
         "logo": "assets/praava.jpg",
-        "period": "Sep 2022 – Dec 2022",
+        "period": "Sep 2022 – Jan 2023",
         "impact": "Drove a 27% increase in brand recognition and helped launch the company's first TikTok channel.",
         "bullets": [
             "Analyzed marketing campaign performance using Excel (regression, "
             "pivot tables, ANOVA) and Tableau dashboards to measure KPIs, track "
             "CRM outcomes, and deliver strategic recommendations to leadership.",
-            "Applied competitive analysis and engagement data to drive a 27% "
-            "increase in brand recognition across social platforms, including "
-            "launching and growing the company's first TikTok channel.",
-            "Collected and structured real-time patient survey data using "
-            "Qualtrics and SurveyMonkey, then trained Front Desk staff on data "
-            "collection best practices to improve team data quality and "
-            "consistency for downstream analysis.",
+            "Drove a 27% increase in brand recognition by analyzing competitive "
+            "and engagement data and launching the company's first TikTok channel; "
+            "collected and structured real-time patient survey data (Qualtrics, "
+            "SurveyMonkey) and trained staff on data collection practices to "
+            "improve data quality.",
             "Achievement: Awarded Best Intern at Praava Health for outstanding "
             "performance during the internship among 12 multicultural interns.",
         ],
