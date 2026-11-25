@@ -107,6 +107,10 @@ if os.path.exists(PROFILE["resume_path"]):
     resume_data_uri = file_to_data_uri(PROFILE["resume_path"])
     social_html += icon_button(RESUME, resume_data_uri, "Resume")
 
+tagline_parts = PROFILE['tagline'].split("<br>", 1)
+tagline_first = tagline_parts[0]
+tagline_second = tagline_parts[1] if len(tagline_parts) > 1 else ""
+
 render_html(
     f"""
     <section id="about" class="section">
@@ -114,11 +118,24 @@ render_html(
             {hero_visual_html}
             <div class="hero-below">
                 <div class="hero-title">{PROFILE['title']}</div>
-                <div class="hero-tagline">{PROFILE['tagline']}</div>
+                <div class="hero-tagline">
+                    <div class="tagline-first">{tagline_first}</div>
+                    <div class="tagline-second">
+                        <span>{tagline_second}</span>
+                        <span class="milk-tea-animation" aria-label="Steaming cup of tea" role="img">
+                            <span class="tea-steam" aria-hidden="true">
+                                <i></i><i></i><i></i>
+                            </span>
+                            <span class="tea-cup" aria-hidden="true">☕</span>
+                        </span>
+                    </div>
+                </div>
                 <div class="icon-row">{social_html}</div>
             </div>
-            <p style="font-size:1.05rem; line-height:1.7;">{PROFILE['bio']}</p>
-            <p class="muted">📍 {PROFILE.get('location', '')}</p>
+            <div class="hero-bio">
+                {''.join(f'<p>{paragraph}</p>' for paragraph in PROFILE['bio'].split(chr(10) * 2) if paragraph)}
+            </div>
+            <p class="hero-location muted" style="width:100%; text-align:center !important; margin:1.25rem auto 0;">📍 {PROFILE.get('location', '')}</p>
         </div>
     </section>
     """

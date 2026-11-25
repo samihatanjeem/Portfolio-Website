@@ -46,9 +46,10 @@ CUSTOM_CSS = f"""
     /* ---------- Brand mark (top-left) ---------- */
     .site-brand {{
         position: fixed;
-        top: 1.3rem; left: 1.5rem;
+        top: 1.8rem;
+        left: 1.5rem;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.25rem;
         color: #33262A;
         letter-spacing: -0.01em;
         z-index: 9999;
@@ -57,15 +58,18 @@ CUSTOM_CSS = f"""
     /* ---------- Thin vertical nav rail (right side) ---------- */
     .site-nav {{
         position: fixed;
-        top: 0; right: 0; bottom: 0;
-        width: 132px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 112px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(255, 253, 249, 0.85);
+        background: rgba(248, 238, 241, 0.96);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border-left: 1px solid rgba(232, 135, 158, 0.2);
+        border-left: 1px solid rgba(232, 135, 158, 0.28);
+        border-right: 1px solid rgba(232, 135, 158, 0.12);
         z-index: 9999;
     }}
     .site-nav-links {{
@@ -105,12 +109,12 @@ CUSTOM_CSS = f"""
     }}
 
     @media (max-width: 720px) {{
-        .site-nav {{ width: 92px; }}
+        .site-nav {{ width: 92px; right: 0; }}
         .site-nav-links {{ gap: 1.3rem; }}
         .site-nav-links a {{ font-size: 0.7rem; padding-top: 1.3rem; }}
         .site-nav-cat {{ font-size: 1.2rem; }}
         .block-container {{ padding-right: 6rem; }}
-        .site-brand {{ font-size: 0.85rem; left: 1rem; }}
+        .site-brand {{ font-size: 1.05rem; left: 1rem; top: 1.3rem; }}
     }}
 
     /* ---------- Sections ---------- */
@@ -133,6 +137,14 @@ CUSTOM_CSS = f"""
     }}
 
     /* ---------- Hero ---------- */
+    #about {{
+        background: #FBE7EC;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding: 2.5rem 1.5rem;
+        border-radius: 16px;
+    }}
+    #about .section-inner {{ padding: 0; }}
     .hero-name {{
         font-size: clamp(2.4rem, 6vw, 4rem);
         font-weight: 800;
@@ -148,10 +160,78 @@ CUSTOM_CSS = f"""
         margin-bottom: 0.6rem;
     }}
     .hero-tagline {{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         font-size: 1.05rem;
         color: #7A6A6A;
-        max-width: 32rem;
-        margin-bottom: 1.5rem;
+        max-width: 36rem;
+        margin: 0 auto 1.5rem;
+        text-align: center;
+    }}
+    .hero-tagline .tagline-second {{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 36rem;
+        min-height: 2.2rem;
+        margin: 0 auto;
+        line-height: 1.8;
+        color: #7A6A6A !important;
+        text-align: center;
+    }}
+    .hero-tagline .tagline-second > span:first-child {{
+        color: #7A6A6A !important;
+    }}
+    .milk-tea-animation {{
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 1.8rem;
+        width: 1.8rem;
+        height: 2.2rem;
+        margin-left: 0.35rem;
+        position: relative;
+    }}
+    .tea-cup {{
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        line-height: 1;
+        height: 1.8rem;
+        color: #7A6A6A !important;
+        filter: drop-shadow(0 3px 4px rgba(51, 38, 42, 0.14));
+    }}
+    .tea-steam {{
+        position: absolute;
+        left: 0.48rem;
+        bottom: 1.65rem;
+        width: 1.35rem;
+        height: 1.2rem;
+        pointer-events: none;
+    }}
+    .tea-steam i {{
+        position: absolute;
+        bottom: 0;
+        width: 0.18rem;
+        height: 0.72rem;
+        border-radius: 999px;
+        background: rgba(194, 85, 122, 0.48);
+        animation: teaSteam 1.8s ease-in-out infinite;
+    }}
+    .tea-steam i:nth-child(1) {{ left: 0.15rem; }}
+    .tea-steam i:nth-child(2) {{ left: 0.55rem; animation-delay: 0.35s; }}
+    .tea-steam i:nth-child(3) {{ left: 0.95rem; animation-delay: 0.7s; }}
+    @keyframes teaSteam {{
+        0% {{ opacity: 0; transform: translateY(0.45rem) scaleY(0.55) rotate(-7deg); }}
+        35% {{ opacity: 1; }}
+        100% {{ opacity: 0; transform: translateY(-0.55rem) scaleY(1.15) rotate(7deg); }}
+    }}
+    @media (prefers-reduced-motion: reduce) {{
+        .tea-steam i {{ animation: none; opacity: 0.45; }}
     }}
 
     /* ---------- Hero flank (photo centered, greeting split left/right) ---------- */
@@ -207,6 +287,19 @@ CUSTOM_CSS = f"""
     .hero-below .hero-title {{ margin-bottom: 0.3rem; }}
     .hero-below .hero-tagline {{ max-width: 36rem; margin: 0 auto 1.5rem; }}
     .hero-below .icon-row {{ justify-content: center; }}
+    .hero-bio {{ max-width: 42rem; margin: 0 auto; }}
+    .hero-bio p {{
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin: 0 0 1.1rem;
+        text-align: justify;
+        text-align-last: left;
+    }}
+    .hero-location {{
+        width: 100%;
+        text-align: center;
+        margin: 1.25rem auto 0;
+    }}
 
     @media (max-width: 820px) {{
         .hero-flank {{ flex-direction: column; gap: 0.5rem; }}

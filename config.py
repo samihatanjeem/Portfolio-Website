@@ -9,16 +9,25 @@ PROFILE = {
     "title": "Data Analyst",
     "tagline": "Small talk isn't my thing, but data storytelling is!<br>I run on milk tea and curiosity to get there.",
     "bio": (
-        "I'm a Business Analytics graduate from East Texas A&M University "
-        "(GPA 3.90). During my internship at PRYPCO, I worked through real "
-        "buyer and seller interviews from the Dubai real estate market to map "
-        "out customer journeys and flag gaps in the product. At Praava Health, "
-        "I was on the marketing side, digging into campaign data and dashboards "
-        "that helped grow brand recognition by 27%. Outside of internships, I "
-        "like building my own projects to keep learning. I've done machine "
-        "learning and regression modeling projects, from predicting U.S. stock "
-        "returns off SEC filings to analyzing fast-food sales data. I mostly "
-        "work in Python, R, SQL, and Tableau."
+        "I am a MSc Business Analytics graduate from East Texas A&M University "
+        "(GPA 3.90) who enjoys exploring data, connecting the dots, and "
+        "solving real-world business problems.\n\n"
+        "My professional journey began in the Textile industry, where working "
+        "with inventory data and business operations sparked my interest in "
+        "analytics. I then worked as a Marketing Data Analyst Intern at a "
+        "healthcare tech company, analyzing patient CRM data, evaluating "
+        "campaign performance, and assisting in tracking marketing KPIs while "
+        "contributing to an increase in brand recognition. Most recently, I "
+        "worked as a Data Research Analyst Intern at a real estate tech company, "
+        "transforming customer data into actionable recommendations to support "
+        "its AI-powered app development.\n\n"
+        "My curiosity for data goes beyond work. I recently built an Agentic "
+        "AI Stock Analyst web application combining LLMs, live financial data, "
+        "RAG, and predictive modeling.\n\n"
+        "I primarily work with SQL, Python, R, and BI tools. I'm currently "
+        "exploring opportunities in Data Analytics, Business Intelligence, "
+        "Data Engineering, and Data Science. I'm always excited to learn, "
+        "experiment with technology, and turn ideas into something useful."
     ),
     "location": "Austin, TX",
     "email": "samihatanjeem@gmail.com",
@@ -177,11 +186,11 @@ SKILLS = {
     "Programming Languages": ["Python", "R", "Spark", "SQL", "Java"],
     "Data Analysis & Visualization": [
         "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Plotly", "PySpark",
-        "Excel", "IBM SPSS", "STATA", "Power BI", "Tableau",
+        "Excel", "IBM SPSS", "STATA", "Power BI", "Tableau", "Looker Studio"
     ],
     "Developer Tools & Platforms": [
-        "MS Visual Studio", "MS SQL Server", "Git", "GitHub", "Docker", "VS Code",
-        "Jupyter", "SQL Workbench", "AWS", "Azure", "GCP", "Microsoft 365",
+        "MS Visual Studio", "MS SQL Server", "Git", "GitHub", "Snowflake", "Azure" "Docker", "VS Code",
+        "Jupyter", "SQL Workbench", "AWS", "Azure", "GCP", "Microsoft 365", "ETL"
     ],
 }
 
@@ -216,19 +225,19 @@ EXPERIENCE = [
         "period": "May 2025 – Jul 2025",
         "impact": "13 prioritized feature recommendations helped the product team decide what to build first for PRYPCO's AI-enabled agent app.",
         "bullets": [
-            "Conducted 13 customer interviews with buyers, sellers, and investors "
-            "across all five PRYPCO products (Mint, Blocks, Mortgage, One, Golden "
-            "Visa), building 13 journey maps to surface pain points, behavioral "
-            "patterns, and feature gaps that informed product recommendations for "
-            "PRYPCO's AI-enabled agent app.",
-            "Cleaned, structured, and analyzed 150 qualitative and quantitative "
-            "data points using Pandas, Excel, and Scikit-learn; built Matplotlib "
-            "and Tableau visualizations to translate EDA findings into actionable "
-            "design recommendations.",
-            "Synthesized findings across five product lines into 13 prioritized "
-            "feature recommendations, ranking pain points by frequency, severity, "
-            "and customer segment to help the product team decide what to build "
-            "first.",
+            "Supported the development of the company's AI-powered real estate "
+            "agent app by conducting customer research across 5 real estate "
+            "product lines (PRYPCO Mint, Blocks, Mortgage, One, and Golden Visa), "
+            "analyzing 13 interviews with property buyers, sellers, and investors.",
+            "Cleaned and structured 150 qualitative and quantitative data points, "
+            "performed exploratory data analysis (EDA) using Python, Pandas, "
+            "Excel, and Scikit-learn, created 13 customer journey flows using "
+            "Plotly and Matplotlib, and visualized customer pain points and gain "
+            "points using Seaborn.",
+            "Translated analytical findings into 13 prioritized feature "
+            "recommendations, ranking customer pain points by frequency, severity, "
+            "and customer segment to inform the product roadmap and guide "
+            "application feature development.",
         ],
     },
     {
@@ -238,14 +247,18 @@ EXPERIENCE = [
         "period": "Sep 2022 – Jan 2023",
         "impact": "Drove a 27% increase in brand recognition and helped launch the company's first TikTok channel.",
         "bullets": [
-            "Analyzed marketing campaign performance using Excel (regression, "
-            "pivot tables, ANOVA) and Tableau dashboards to measure KPIs, track "
-            "CRM outcomes, and deliver strategic recommendations to leadership.",
-            "Drove a 27% increase in brand recognition by analyzing competitive "
-            "and engagement data and launching the company's first TikTok channel; "
-            "collected and structured real-time patient survey data (Qualtrics, "
-            "SurveyMonkey) and trained staff on data collection practices to "
-            "improve data quality.",
+            "Analyzed healthcare marketing campaign performance using Excel, pivot "
+            "tables, regression analysis, and ANOVA; assisted in tracking marketing "
+            "KPIs through Looker Studio and analyzing patient CRM data using Power "
+            "BI to support data-driven marketing decisions.",
+            "Analyzed competitor strategies and audience engagement data to identify "
+            "growth opportunities, launched the company's first TikTok channel, and "
+            "contributed to a 27% increase in brand recognition.",
+            "Collected and structured patient feedback data using Qualtrics and "
+            "SurveyMonkey, assisted in evaluating Customer Satisfaction Scores "
+            "(CSAT) and Customer Acquisition Cost (CAC), and trained frontline "
+            "healthcare staff on standardized data collection practices to improve "
+            "data quality and consistency.",
             "Achievement: Awarded Best Intern at Praava Health for outstanding "
             "performance during the internship among 12 multicultural interns.",
         ],
